@@ -296,10 +296,8 @@ const DrawCore = React.forwardRef<
         }
         onSelectionChange?.(false);
       },
-       onSelectionChange: (result:boolean) => {
-        onSelectionChange(result);
-      },
       takeSnapshot: async (): Promise<string | undefined> => {
+         onSelectionChange?.(false);
         return viewShot.current?.capture?.();
       },
     }),
