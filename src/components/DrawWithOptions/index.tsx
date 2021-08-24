@@ -73,10 +73,14 @@ export default function DrawWithOptions({
 
   const onPressSend = useCallback(() => {
     setDrawingMode('doubleHead');
+    
+
+    
     if (drawRef.current) {
       
-      
-      takeSnapshot?.(drawRef.current.takeSnapshot());
+          setTimeout(function() { takeSnapshot?.(drawRef.current.takeSnapshot()); }, 5000);
+
+     
     }
   }, [takeSnapshot]);
 
