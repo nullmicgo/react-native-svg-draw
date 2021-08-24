@@ -72,9 +72,9 @@ export default function DrawWithOptions({
   const [selectedItem, setSelectedItem] = useState(false);
 
   const onPressSend = useCallback(() => {
+    setDrawingMode('doubleHead');
     if (drawRef.current) {
       
-      drawRef.current.unSelectedItemBeforeSnapshot();
       
       takeSnapshot?.(drawRef.current.takeSnapshot());
     }
