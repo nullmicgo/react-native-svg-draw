@@ -73,6 +73,9 @@ export default function DrawWithOptions({
 
   const onPressSend = useCallback(() => {
     if (drawRef.current) {
+      
+      drawRef.current.unSelectedItemBeforeSnapshot();
+      
       takeSnapshot?.(drawRef.current.takeSnapshot());
     }
   }, [takeSnapshot]);
