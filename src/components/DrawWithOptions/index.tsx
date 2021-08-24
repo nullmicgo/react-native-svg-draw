@@ -88,45 +88,9 @@ export default function DrawWithOptions({
           <CloseSvg height={20} width={20} fill="#ffffff" />
         </Pressable>
         <View style={styles.drawOptions}>
-          <Pressable
-            style={styles.option}
-            onPress={() => {
-              setDrawingMode('doubleHead');
-            }}
-          >
-            <DoubleHeadSvg
-              height={20}
-              width={20}
-              fill="#ffffff"
-              opacity={drawingMode === 'doubleHead' ? 1 : 0.5}
-            />
-          </Pressable>
-          <Pressable
-            style={styles.option}
-            onPress={() => {
-              setDrawingMode('singleHead');
-            }}
-          >
-            <ArrowSvg
-              height={23}
-              width={23}
-              fill="#ffffff"
-              opacity={drawingMode === 'singleHead' ? 1 : 0.5}
-            />
-          </Pressable>
-          <Pressable
-            style={styles.option}
-            onPress={() => {
-              setDrawingMode('rectangle');
-            }}
-          >
-            <SquareSvg
-              height={27}
-              width={27}
-              fill="#ffffff"
-              opacity={drawingMode === 'rectangle' ? 1 : 0.5}
-            />
-          </Pressable>
+   
+  
+          
           <Pressable
             style={styles.option}
             onPress={() => {
@@ -141,19 +105,7 @@ export default function DrawWithOptions({
             />
           </Pressable>
 
-          <Pressable
-            style={styles.option}
-            onPress={() => {
-              setDrawingMode('text');
-            }}
-          >
-            <TextSvg
-              height={28}
-              width={28}
-              fill="#ffffff"
-              opacity={drawingMode === 'text' ? 1 : 0.5}
-            />
-          </Pressable>
+        
         </View>
       </View>
       <DrawCore
