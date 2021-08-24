@@ -9,11 +9,7 @@ import {
 } from 'react-native';
 import DrawCore from '../DrawCore';
 import type { DrawItemType, DrawCoreProps } from '../../types';
-import DoubleHeadSvg from './DoubleHeadSvg';
 import CircleSvg from './CircleSvg';
-import SquareSvg from './SquareSvg';
-import ArrowSvg from './ArrowSvg';
-import TextSvg from './TextSvg';
 import CloseSvg from './CloseSvg';
 import ThrashSvg from './ThrashSvg';
 import SendSvg from './SendSvg';
