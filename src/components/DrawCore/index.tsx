@@ -296,9 +296,6 @@ const DrawCore = React.forwardRef<
         }
         onSelectionChange?.(false);
       },
-      unSelectedItemBeforeSnapshot: () => {
-         updateDoneItems(currentItem);
-      },
       takeSnapshot: async (): Promise<string | undefined> => {
         return viewShot.current?.capture?.();
       },
