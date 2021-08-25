@@ -71,8 +71,8 @@ const styles = StyleSheet.create({
   strokeSliderContainer: {
     flex: 1,
     paddingBottom: 15,
-    borderBottomColor: '#ff0000',
-    borderBottomWidth: 10,
+    borderBottomColor: '#000000',
+    borderBottomWidth: 2,
   },
   colorSliderContainer: { flex: 1, paddingTop: 15 },
   bgImage: { width: '100%', height: '100%' },
