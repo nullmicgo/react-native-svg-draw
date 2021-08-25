@@ -77,7 +77,7 @@ export default function DrawWithOptions({
         if (drawRef.current) {
               takeSnapshot?.(drawRef.current.takeSnapshot()); 
            }
-    }, 1000);
+    }, 500);
   }, [takeSnapshot]);
 
   return (
