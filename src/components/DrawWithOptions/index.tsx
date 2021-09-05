@@ -10,7 +10,6 @@ import {
 import DrawCore from '../DrawCore';
 import type { DrawItemType, DrawCoreProps } from '../../types';
 import CircleSvg from './CircleSvg';
-import CloseSvg from './CloseSvg';
 import ThrashSvg from './ThrashSvg';
 import SendSvg from './SendSvg';
 
@@ -55,12 +54,10 @@ const styles = StyleSheet.create({
 });
 
 export default function DrawWithOptions({
-  close,
   takeSnapshot,
   linearGradient,
   image,
 }: {
-  close?: () => void;
   takeSnapshot?: (snap: Promise<string | undefined>) => void;
   linearGradient: React.ComponentType<{ colors: any[] } & ViewProps>;
   image?: ImageRequireSource | ImageURISource;
