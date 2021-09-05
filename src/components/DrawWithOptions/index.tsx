@@ -83,9 +83,6 @@ export default function DrawWithOptions({
   return (
     <View style={styles.container}>
       <View style={styles.toolbar}>
-        <Pressable style={styles.option} onPress={close}>
-          <CloseSvg height={20} width={20} fill="#ffffff" />
-        </Pressable>
         <View style={styles.drawOptions}>
    
   
