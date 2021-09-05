@@ -8,7 +8,6 @@ import {
   ImageURISource,
 } from 'react-native';
 import DrawCore from '../DrawCore';
-import CircleSvg from './CircleSvg';
 import type { DrawItemType, DrawCoreProps } from '../../types';
 import ThrashSvg from './ThrashSvg';
 import SendSvg from './SendSvg';
@@ -84,19 +83,7 @@ export default function DrawWithOptions({
    
   
           
-          <Pressable
-            style={styles.option}
-            onPress={() => {
-              setDrawingMode('ellipse');
-            }}
-          >
-            <CircleSvg
-              fill="#000000"
-              height={26}
-              width={26}
-              opacity={drawingMode === 'ellipse' ? 1 : 0.5}
-            />
-          </Pressable>
+
 
         
         </View>
