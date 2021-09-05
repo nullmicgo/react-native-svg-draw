@@ -8,6 +8,7 @@ import {
   ImageURISource,
 } from 'react-native';
 import DrawCore from '../DrawCore';
+import CircleSvg from './CircleSvg';
 import type { DrawItemType, DrawCoreProps } from '../../types';
 import ThrashSvg from './ThrashSvg';
 import SendSvg from './SendSvg';
